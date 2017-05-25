@@ -29,3 +29,9 @@ docker exec -it 205c968e57c5 /bin/bash
 
 
 http://127.0.0.1:8080/
+
+5/25/2017
+[Issue: docker image of jenkin contains only jenkin user, no root access]
+[Others: oracle vm, Jenkin docker image]
+[tried modifing Dockerfile to start install Jenkins jnpl]
+[Task: Jenkin job triggers, a docker image with ruby/ jenkin jnlp, to execute a ruby script ruby] Jenkin was unable to connect with the Jenkin slave - fix later
