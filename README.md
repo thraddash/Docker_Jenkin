@@ -57,3 +57,8 @@ java -jar /usr/lib/jenkins/jenkins.war
 ##ROOT##
 docker exec -u 0 -it <container id of jenkins> /bin/bash
 
+docker run -v /var/run/docker.sock:/var/run/docker.sock -v $(which docker):$(which docker) ubuntu bash
+
+[root@localhost run]# docker run -p 8080:8080 -p 50000:50000 -v /var/run/docker.dock:/var/run/docker.sock -v /opt/jenkins_home:/var/jenkins_home -d johannesw/jenkins-docker-cli
+
+Docker Plugin
