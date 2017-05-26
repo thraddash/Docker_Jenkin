@@ -34,7 +34,8 @@ http://127.0.0.1:8080/
 Issue: docker image of jenkin contains only jenkin user, no root access
 Others: oracle vm, Jenkin docker image
 tried modifing Dockerfile to start install Jenkins jnpl
-Task: Jenkin job triggers, a docker image with ruby/ jenkin jnlp, to execute a ruby script ruby] Jenkin was unable to connect with the Jenkin slave - fix later
+Task: Jenkin job triggers, a docker image with ruby/ jenkin jnlp, to execute a ruby script ruby 
+Jenkin was unable to connect with the Jenkin slave - fix later
 
 /var/lib/
 mv jenkins jenkins_old
@@ -46,9 +47,11 @@ ps -ef |grep java
 systemctl status jenkins
 telnet localhost 8080
 curl localhost:8080
+
 journalctl -xe
 rpm -qa|grep jenkins
 rpm -ql jenkins-2.46.2-1.1.noarch
 /etc/init.d/jenkins
- java -jar /usr/lib/jenkins/jenkins.war
+java -jar /usr/lib/jenkins/jenkins.war
+
 
