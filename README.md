@@ -54,5 +54,6 @@ rpm -ql jenkins-2.46.2-1.1.noarch
 /etc/init.d/jenkins
 java -jar /usr/lib/jenkins/jenkins.war
 
+##ROOT##
 docker exec -u 0 -it <container id of jenkins> /bin/bash
 
